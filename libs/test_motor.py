@@ -1,7 +1,10 @@
 import pico_4wd as car
 import time
 
+running = False
+
 def test_motor():
+    running = True
     speed = 50
     act_list = [
         "forward",
@@ -14,6 +17,7 @@ def test_motor():
         print(act)
         car.move(act, speed)
         time.sleep(1)
+    running = False
 
 
 try:

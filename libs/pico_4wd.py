@@ -6,10 +6,10 @@ LIGHT_REAR = 0
 LIGHT_BOTTOM_LEFT = 1
 LIGHT_BOTTOM_RIGHT = 2
 
-left_front  = Motor(17, 16, dir=1) # motor 1
+left_front  = Motor(17, 16, dir=-1) # motor 1
 right_front = Motor(15, 14, dir=-1) # motor 2
 left_rear   = Motor(13, 12, dir=1) # motor 3
-right_rear  = Motor(11, 10, dir=-1) # motor 4
+right_rear  = Motor(11, 10, dir=1) # motor 4
 motors = [left_front, right_front, left_rear, right_rear]
 
 servo = Servo(18)
